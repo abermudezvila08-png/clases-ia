@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curso de IA | Portal</title>
+<style>
+:root{--bg:#060606;--card:#121212;--text:#f2f2f2;--muted:#a9a9a9;--orange:#ff8c00;--gold:#d4af37;--aqua:#2bbbad;--border:#252525}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+header,main,footer{max-width:1100px;margin:0 auto;padding:16px}header{padding-top:28px}
+h1{margin:0;color:var(--gold);font-size:clamp(24px,4vw,42px)}p{line-height:1.6}.muted{color:var(--muted)}
+.nav{display:flex;flex-wrap:wrap;gap:10px;position:sticky;top:0;background:#0a0a0a;border-bottom:1px solid var(--border);padding:12px 16px;z-index:10}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:10px;background:var(--orange);color:#111;text-decoration:none;font-weight:700}.btn.gold{background:var(--gold)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px}.card h2,.card h3{margin-top:0;color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.logo-mark{width:56px;height:56px;border-radius:50%;display:inline-grid;place-items:center;background:radial-gradient(circle at 30% 30%, rgba(43,187,173,.95), rgba(12,12,12,.95));color:#fff;font-weight:800;box-shadow:0 0 0 1px rgba(212,175,55,.4)}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo-mark">V</div>
+  <h1>Curso de IA — Portal del Alumno</h1>
+  <p class="muted">Paso a paso, sin prisa, y solo con la clase vigente visible.</p>
+</header>
+<nav class="nav">
+  <a class="btn" href="clase-0/index.html">Clase 0</a>
+  <a class="btn" href="clase-1/index.html">Clase 1</a>
+  <a class="btn" href="clase-2/index.html">Clase 2</a>
+  <a class="btn gold" href="#progreso">Ver progreso</a>
+</nav>
+<main>
+  <section class="card">
+    <h2>Bienvenida</h2>
+    <p>Este portal funciona como entrada general del curso. Tú publicarás solo la clase de la semana y las demás quedarán fuera de vista.</p>
+  </section>
+  <section class="grid">
+    <article class="card">
+      <h3>Clase 0</h3>
+      <p>Mapa del curso, método de trabajo y arranque suave.</p>
+    </article>
+    <article class="card">
+      <h3>Clase 1</h3>
+      <p>¿Qué es la Inteligencia Artificial? Definición, tipos y ejemplos cotidianos.</p>
+    </article>
+    <article class="card">
+      <h3>Clase 2</h3>
+      <p>Historia y ética de la IA: hitos, dilemas y responsabilidad.</p>
+    </article>
+  </section>
+  <section class="card" id="progreso">
+    <h2>Progreso del curso</h2>
+    <p class="muted">Después lo conectamos al dashboard semanal.</p>
+  </section>
+</main>
+<footer><p class="muted">Verbum Tech Solution · Curso de IA</p></footer>
+</body>
+</html>
