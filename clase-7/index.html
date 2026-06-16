@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clase 7 | Deep Learning Básico</title>
+<style>
+:root{--bg:#060606;--card:#121212;--text:#f2f2f2;--muted:#a9a9a9;--orange:#ff8c00;--gold:#d4af37;--aqua:#2bbbad;--border:#252525}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.nav{display:flex;flex-wrap:wrap;gap:10px;position:sticky;top:0;background:#0a0a0a;border-bottom:1px solid var(--border);padding:12px 16px;z-index:10}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:10px;background:var(--orange);color:#111;text-decoration:none;font-weight:700}
+.btn.gold{background:var(--gold)}
+main{max-width:1100px;margin:0 auto;padding:16px}
+.splash{display:grid;place-items:center;min-height:220px;background:radial-gradient(circle at center, rgba(43,187,173,.18), transparent 55%), #0c0c0c;border:1px solid var(--border);border-radius:16px;margin-bottom:14px;overflow:hidden}
+.logo{width:120px;height:120px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 30%, rgba(43,187,173,.95), rgba(12,12,12,.95));color:#fff;font-size:42px;font-weight:900;box-shadow:0 0 0 1px rgba(212,175,55,.45)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px}
+.card h2,.card h3{margin-top:0;color:var(--gold)}
+h1{color:var(--gold);margin:0 0 8px}
+p,li{line-height:1.6}
+.muted{color:var(--muted)}
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid var(--border);padding:8px 10px;text-align:left}
+th{color:var(--gold)}
+code,pre{background:#0a0a0a;border:1px solid var(--border);border-radius:10px;padding:10px;display:block;overflow:auto;color:#eaeaea}
+.warn{border-left:4px solid var(--orange);background:#111;padding:12px;border-radius:10px}
+.warn strong{color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="nav">
+  <a class="btn" href="../index.html">Inicio</a>
+  <a class="btn" href="../clase-6/index.html">Clase 6</a>
+  <a class="btn gold" href="../clase-8/index.html">Siguiente</a>
+</div>
+
+<main>
+  <div class="splash"><div class="logo">V</div></div>
+
+  <h1>Clase 7: Deep Learning Básico</h1>
+  <p class="muted">La versión más profunda del aprendizaje automático, con redes neuronales simples.</p>
+
+  <section class="card">
+    <h2>Objetivos</h2>
+    <ul>
+      <li>Explicar qué es una red neuronal con una analogía sencilla.</li>
+      <li>Diferenciar perceptrón, capa oculta, activación y backpropagation.</li>
+      <li>Construir una red neuronal simple en Colab con TensorFlow/Keras.</li>
+      <li>Interpretar loss y accuracy durante el entrenamiento.</li>
+      <li>Entender por qué el deep learning requiere datos y cómputo.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Conceptos clave</h2>
+    <table>
+      <tr><th>Concepto</th><th>Idea simple</th></tr>
+      <tr><td>Perceptrón</td><td>La neurona artificial más simple.</td></tr>
+      <tr><td>Función de activación</td><td>Decide si la neurona responde o no.</td></tr>
+      <tr><td>Capa oculta</td><td>Procesa la información en medio del camino.</td></tr>
+      <tr><td>Backpropagation</td><td>Corrige errores desde la salida hacia atrás.</td></tr>
+      <tr><td>Epoch</td><td>Una pasada completa por los datos.</td></tr>
+      <tr><td>Loss</td><td>Cuánto se equivoca la red.</td></tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Overfitting</h2>
+    <p>Una red puede memorizar demasiado los datos de entrenamiento y fallar con datos nuevos. Para evitarlo, se usan técnicas como dropout, early stopping y más datos.</p>
+  </section>
+
+  <section class="card">
+    <h2>Práctica</h2>
+    <p>Entrena un modelo MNIST en Colab, observa la pérdida y la precisión, y compara entrenamiento con validación.</p>
+  </section>
+
+  <section class="card warn">
+    <strong>⚠️ Uso restringido.</strong> El uso indebido o malintencionado de este material puede provocar molestias y consecuencias serias para el usuario. Cualquier uso indebido será registrado y respondido por el creador. No subestimar este aviso de VERBUM.
+    <br><br>
+    Para uso correcto: <a href="mailto:verbumtechsolution@gmail.com">verbumtechsolution@gmail.com</a>
+  </section>
+</main>
+</body>
+</html>
