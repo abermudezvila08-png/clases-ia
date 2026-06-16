@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clase 9 | IA Generativa y Prompt Engineering</title>
+<style>
+:root{--bg:#060606;--card:#121212;--text:#f2f2f2;--muted:#a9a9a9;--orange:#ff8c00;--gold:#d4af37;--aqua:#2bbbad;--border:#252525}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.nav{display:flex;flex-wrap:wrap;gap:10px;position:sticky;top:0;background:#0a0a0a;border-bottom:1px solid var(--border);padding:12px 16px;z-index:10}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:10px;background:var(--orange);color:#111;text-decoration:none;font-weight:700}
+.btn.gold{background:var(--gold)}
+main{max-width:1100px;margin:0 auto;padding:16px}
+.splash{display:grid;place-items:center;min-height:220px;background:radial-gradient(circle at center, rgba(43,187,173,.18), transparent 55%), #0c0c0c;border:1px solid var(--border);border-radius:16px;margin-bottom:14px;overflow:hidden}
+.logo{width:120px;height:120px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 30%, rgba(43,187,173,.95), rgba(12,12,12,.95));color:#fff;font-size:42px;font-weight:900;box-shadow:0 0 0 1px rgba(212,175,55,.45)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px}
+.card h2,.card h3{margin-top:0;color:var(--gold)}
+h1{color:var(--gold);margin:0 0 8px}
+p,li{line-height:1.6}
+.muted{color:var(--muted)}
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid var(--border);padding:8px 10px;text-align:left}
+th{color:var(--gold)}
+code,pre{background:#0a0a0a;border:1px solid var(--border);border-radius:10px;padding:10px;display:block;overflow:auto;color:#eaeaea}
+.warn{border-left:4px solid var(--orange);background:#111;padding:12px;border-radius:10px}
+.warn strong{color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="nav">
+  <a class="btn" href="../index.html">Inicio</a>
+  <a class="btn" href="../clase-8/index.html">Clase 8</a>
+  <a class="btn gold" href="../clase-10/index.html">Siguiente</a>
+</div>
+
+<main>
+  <div class="splash"><div class="logo">V</div></div>
+
+  <h1>Clase 9: IA Generativa y Prompt Engineering</h1>
+  <p class="muted">Aprende a hablar con modelos generativos con intención, claridad y criterio.</p>
+
+  <section class="card">
+    <h2>Objetivos</h2>
+    <ul>
+      <li>Explicar qué son los modelos generativos.</li>
+      <li>Entender qué es un prompt y por qué importa.</li>
+      <li>Aplicar técnicas como few-shot, role prompting y formato estructurado.</li>
+      <li>Comprender RAG como recuperación + generación.</li>
+      <li>Reflexionar sobre alucinaciones, sesgos y derechos de autor.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Conceptos clave</h2>
+    <table>
+      <tr><th>Tema</th><th>Idea simple</th></tr>
+      <tr><td>IA generativa</td><td>Produce contenido nuevo.</td></tr>
+      <tr><td>Prompt</td><td>La instrucción que das al modelo.</td></tr>
+      <tr><td>Few-shot</td><td>Le das ejemplos para guiarlo.</td></tr>
+      <tr><td>Role prompting</td><td>Le asignas un papel.</td></tr>
+      <tr><td>RAG</td><td>Busca información y luego responde.</td></tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Buenas prácticas</h2>
+    <ul>
+      <li>Pide contexto, formato y tono.</li>
+      <li>Especifica la salida esperada.</li>
+      <li>Verifica siempre las respuestas.</li>
+      <li>No uses el modelo como fuente única de verdad.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Práctica</h2>
+    <p>Diseña cinco prompts efectivos, prueba sus resultados y compara cuál te dio la salida más útil.</p>
+  </section>
+
+  <section class="card warn">
+    <strong>⚠️ Uso restringido.</strong> El uso indebido o malintencionado de este material puede provocar molestias y consecuencias serias para el usuario. Cualquier uso indebido será registrado y respondido por el creador. No subestimar este aviso de VERBUM.
+    <br><br>
+    Para uso correcto: <a href="mailto:verbumtechsolution@gmail.com">verbumtechsolution@gmail.com</a>
+  </section>
+</main>
+</body>
+</html>
