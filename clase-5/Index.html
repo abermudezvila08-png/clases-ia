@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clase 5 | Fundamentos de Machine Learning</title>
+<style>
+:root{--bg:#060606;--card:#121212;--text:#f2f2f2;--muted:#a9a9a9;--orange:#ff8c00;--gold:#d4af37;--aqua:#2bbbad;--border:#252525}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.nav{display:flex;flex-wrap:wrap;gap:10px;position:sticky;top:0;background:#0a0a0a;border-bottom:1px solid var(--border);padding:12px 16px;z-index:10}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:10px;background:var(--orange);color:#111;text-decoration:none;font-weight:700}
+.btn.gold{background:var(--gold)}
+main{max-width:1100px;margin:0 auto;padding:16px}
+.splash{display:grid;place-items:center;min-height:220px;background:radial-gradient(circle at center, rgba(43,187,173,.18), transparent 55%), #0c0c0c;border:1px solid var(--border);border-radius:16px;margin-bottom:14px;overflow:hidden}
+.logo{width:120px;height:120px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 30%, rgba(43,187,173,.95), rgba(12,12,12,.95));color:#fff;font-size:42px;font-weight:900;box-shadow:0 0 0 1px rgba(212,175,55,.45)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px}
+.card h2,.card h3{margin-top:0;color:var(--gold)}
+h1{color:var(--gold);margin:0 0 8px}
+p,li{line-height:1.6}
+.muted{color:var(--muted)}
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid var(--border);padding:8px 10px;text-align:left}
+th{color:var(--gold)}
+code,pre{background:#0a0a0a;border:1px solid var(--border);border-radius:10px;padding:10px;display:block;overflow:auto;color:#eaeaea}
+.warn{border-left:4px solid var(--orange);background:#111;padding:12px;border-radius:10px}
+.warn strong{color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="nav">
+  <a class="btn" href="../index.html">Inicio</a>
+  <a class="btn" href="../clase-4/index.html">Clase 4</a>
+  <a class="btn gold" href="../clase-6/index.html">Siguiente</a>
+</div>
+
+<main>
+  <div class="splash"><div class="logo">V</div></div>
+
+  <h1>Clase 5: Fundamentos de Machine Learning</h1>
+  <p class="muted">Aprender a entrenar con datos, no a memorizar reglas.</p>
+
+  <section class="card">
+    <h2>Objetivos</h2>
+    <ul>
+      <li>Explicar qué es ML y cómo se diferencia de la programación tradicional.</li>
+      <li>Identificar supervisado, no supervisado y por refuerzo.</li>
+      <li>Comprender entrenamiento, evaluación, etiquetas y características.</li>
+      <li>Reconocer el overfitting y cómo evitarlo.</li>
+      <li>Entender accuracy y MSE como métricas básicas.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Contenido clave</h2>
+    <p>En programación tradicional escribes reglas. En Machine Learning, das ejemplos y el modelo descubre patrones por sí mismo. Esa diferencia cambia por completo la forma de construir soluciones.</p>
+    <p>Supervisado usa datos con respuestas correctas, no supervisado agrupa sin etiquetas y por refuerzo aprende por recompensas o castigos.</p>
+  </section>
+
+  <section class="card">
+    <h2>Pipeline básico</h2>
+    <table>
+      <tr><th>Paso</th><th>Idea</th></tr>
+      <tr><td>Recolectar datos</td><td>Juntar la materia prima.</td></tr>
+      <tr><td>Limpiar y preparar</td><td>Quitar ruido y ordenar.</td></tr>
+      <tr><td>Dividir</td><td>Separar entrenamiento y prueba.</td></tr>
+      <tr><td>Entrenar</td><td>El modelo aprende patrones.</td></tr>
+      <tr><td>Evaluar</td><td>Ver si generaliza.</td></tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Overfitting</h2>
+    <p>Ocurre cuando el modelo aprende demasiado bien los datos de entrenamiento y falla con datos nuevos. Es como memorizar un examen viejo sin entender el contenido.</p>
+  </section>
+
+  <section class="card">
+    <h2>Métricas básicas</h2>
+    <table>
+      <tr><th>Problema</th><th>Métrica</th><th>Qué mira</th></tr>
+      <tr><td>Clasificación</td><td>Accuracy</td><td>Porcentaje de aciertos.</td></tr>
+      <tr><td>Regresión</td><td>MSE</td><td>Error promedio al cuadrado.</td></tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Práctica</h2>
+    <p>Explora un dataset sencillo en Colab y responde cuántas filas, características y clases tiene.</p>
+  </section>
+
+  <section class="card warn">
+    <strong>⚠️ Uso restringido.</strong> El uso indebido o malintencionado de este material puede provocar molestias y consecuencias serias para el usuario. Cualquier uso indebido será registrado y respondido por el creador. No subestimar este aviso de VERBUM.
+    <br><br>
+    Para uso correcto: <a href="mailto:verbumtechsolution@gmail.com">verbumtechsolution@gmail.com</a>
+  </section>
+</main>
+</body>
+</html>
